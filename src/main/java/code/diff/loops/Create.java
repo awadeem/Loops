@@ -84,22 +84,26 @@ public class Create {
 
          int celsius = 0;
         double fahrenheit;
+        System.out.println(" | "+"celsius"+"|"+"fahrenheit"+"| ");
+
         while(celsius <=30 ) {
             fahrenheit = (9.0/5.0 * celsius) + 32;
-            System.out.println(" | " + celsius + " | " + fahrenheit + " | ");
+           System.out.println(" | " + celsius + "      | " + fahrenheit + "     | ");
             celsius++;
-
         }
+
 
         // Problem 4
         // Declare a variable x with any value. Determine if x is prime.
+        //Dividing the number by 2 does gain us efficiency but how could we make it more efficient? Think about 25,
+        // do you need to go up to 12.5? Could you stop at a lower number?
         System.out.println("PROBLEM 4: ");
 
         int remainder;
         boolean isPrime = true;
-        int numberToCheck = 97;
+        int numberToCheck = 77;
 
-        for (int i = 2; i <= numberToCheck / 2; i++) {
+        for (int i = 2; i <= numberToCheck /i; i++) {
             remainder = numberToCheck % i;
 
 
@@ -118,7 +122,8 @@ public class Create {
 
         // Problem 5
         // The Kalebnacci sequence begins with 2 and -1 as its first and second terms.
-        // After these first two elements, each subsequent element is equal to twice the previous previous term minus the previous term.
+        // After these first two elements, each subsequent element is equal to twice the previous previous term minus
+        // the previous term.
         // kaleb(0) = 2
         // kaleb(1) = -1
         // kaleb(n) = 2*kaleb(n-2) - kaleb(n-1)
